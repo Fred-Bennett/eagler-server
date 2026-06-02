@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%;background-color:black;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eaglercraft Client</title>
+</head>
+
+<body style="margin:0px;width:100%;height:100%;">
+
+<div id="game_frame" style="width:100%;height:100%;"></div>
+
+<script>
+"use strict";
+
+/* ===== SERVER CONFIG ===== */
+window.eaglercraftXOpts = {
+    container: "game_frame",
+
+    servers: [
+        {
+            name: "My Server",
+            ip: "wss://environmental-complicated-degrees-tobacco.trycloudflare.com"
+        }
+    ]
+};
+</script>
+
+<!-- Your actual Eagler loader script goes here -->
+<script src="loader.js"></script>
+
+</body>
+</html>
